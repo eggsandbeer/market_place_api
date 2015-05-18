@@ -5,6 +5,10 @@ module Request
     end
   end
   module HeadersHelpers
+    def api_authorization_header(token)
+      request.headers['Authorization'] = token
+    end
+
     def api_header(version = 1)
       request.headers['Accept'] = "appplication/vnd.marketplace.v#{version}"
     end
