@@ -14,9 +14,9 @@
 ActiveRecord::Schema.define(version: 20150518192055) do
 
   create_table "products", force: true do |t|
-    t.string   "title",      default: ""
-    t.decimal  "price",      default: 0.0
-    t.boolean  "published",  default: false
+    t.string   "title"
+    t.decimal  "price"
+    t.boolean  "published"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
