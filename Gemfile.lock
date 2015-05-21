@@ -182,7 +182,7 @@ DEPENDENCIES
   furatto
   jquery-rails
   rails (= 4.0.0)
-  rspec-rails (~> 2.14)
+  rspec-rails
   sabisu_rails!
   sass-rails (~> 4.0.0)
   sdoc
