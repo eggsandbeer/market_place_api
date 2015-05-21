@@ -28,6 +28,11 @@ class Api::V1::ProductsController < ApplicationController
     end
   end
 
+  def destroy
+    product = current_user.products.find(params[:id])
+    product.destroy
+    head 204
+  end
   private
     def product_params
       params.require(:product).permit(:title, :price, :published)
